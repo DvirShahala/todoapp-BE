@@ -9,12 +9,15 @@ export interface ItodoScema {
 const TodoSchema = new mongoose.Schema<ItodoScema>({
   id: {
     type: Number,
+    require: true,
   },
   name: {
     type: String,
+    require: true,
   },
   ifComplete: {
     type: Boolean,
+    require: true,
   },
 });
 
